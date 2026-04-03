@@ -1,0 +1,14 @@
+.productDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card {
+        width: 450px;
+        margin: 20px;
+    }
+    img {
+        width: 350px;
+        
+        height: 200px;
+    };
+}
