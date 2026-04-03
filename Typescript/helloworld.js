@@ -1,0 +1,10 @@
+var a;
+var b;
+var userName;
+a = 20;
+b = 50;
+userName = 'Raj';
+var result = a + b;
+console.log("The sum is " + result);
+console.log("The user name is " + userName);
+console.log("Hello every one");

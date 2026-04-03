@@ -1,0 +1,1232 @@
+
+9th Dec 2025
+
+Course Content 
+
+    Complete React JS - 19.2 
+
+    Redux state management 
+
+    Routing 
+
+    Complete Typescript from scracth
+
+    MUI & Bootstrap react
+
+    React with Typescript 
+
+    Unit testcases
+
+    GIThub / Git clients 
+
+    Building applications with support of AI/Copilot
+
+    3 projects 
+
+    Node js with Express js
+        webservices
+        POST/GET send and receiving data 
+        JWT 
+        DB communication 
+        Encryption and decription 
+    
+    Database 
+        Mongodb - JSON/BSON
+
+50 to 60 Classes 
+
+7:15 - 8:45 
+
+----------------------
+
+Fullstack Dev 
+
+    Frontend tech + backend/webserver  + database 
+    
+
+    Python Fullstack dev 
+
+        Frontend + python/django server + database 
+
+    Java fullstack 
+
+        Frontend + tomcaatapache with Spring + databse 
+
+    .net fulstack 
+
+        Frontend + .net server + database
+
+
+    Frontend
+        HTML + JS + CSS 
+        Angular | React | Nextjs + Cane + Vue js etc.
+
+        9133343359 - Sukanya
+
+----------
+
+AI effect for react/ui/frontend dev 
+
+    Components 
+        Individual UI havig its own styles and html along with functionality | logic 
+            Functional components
+            Class based components 
+
+        SPA - Single page web application 
+
+        onlineshpping app 
+            login.html 
+            signup.hatml 
+            productdetails.html 
+            logout.html 
+            .. 
+            ...
+            ....
+
+        Onlineshopping page 
+            index/master.html 
+------------
+
+Create a react application 
+
+    1. Injection of react to an existing application
+        react core js file 
+        react-dom js file 
+
+    2. Create a react application usting bundler(webpack, parcel, vite etc.) from scracth 
+
+-------
+
+Core features of React js, making it so popular 
+
+import and export keywords in js 
+===============================================================
+
+
+Dec 10th
+
+    explored import and export keywords 
+
+Softwares we needed
+
+    Nodejs along with npm 
+    VS code editor
+
+Steps to inject react features to an existing application 
+    1. Installtion of node js 
+    2. Installtion of node modules 'react' and 'react-dom'
+====================================================
+
+Dec 11th 2025
+
+    Steps to inject React features to a existing web application 
+
+        1. Keep ready with existing web application 
+
+==================================================
+Dec 12th 2025
+
+createRoot - through which we could mention what part of html dom will be responsible by injecting react features
+
+
+render() - method through which we are appending components to dom 
+    component: 
+        1. its own html 
+        2. its own styles/css 
+        3. own business logic/ functionality
+        4. will work independant 
+
+    Creating a functional component in react - rules 
+        1. Component Name / fun name  should always starts with uppercase 
+        2. has to mandate return a fragment (part of html under single parrent tag)
+
+
+    eg: function VisitionCard() {
+
+    return (
+        <div>
+            <h4>My Visition Card</h4>
+            <p>Name: John Doe</p>
+        </div>
+    )
+}
+===================================================================================
+
+Dec 15 2025
+
+GITHUB 
+
+    Git clients s/w to be installed 
+        Git bash 
+        git desktop 
+        GIT tortise 
+        GIT UI 
+        etc
+
+    React 
+        React JS - JS lib to build rich ui features/ webapplication
+
+        React Native - to build mobile apps 
+
+        Compiteters -> Angular, Nextjs , cane js, backbonejs, veu js , etc. 
+
+Core Concepts of React js lib which is making React so popular 
+
+    1. Component based development 
+
+    2. JSX/TSX (where html content can be injected within js code itself) based syntax 
+        Easy to retrive the js code to html view.
+
+    3. Virtual DOM - the concept of creating a copy from actual dom, doing data binding changes within the copy dom (virtual dom) later through DIff algorithm, react will be updateing actual dom with vitrual dom content.
+
+    4. Data binding - The concept of getting/retriving js variables directly to the dom without using any dom oopertions
+
+    5. Server side rendering Components - The concept of rendering the component while server is throwing data to the client.
+
+    6. Fragmenting - All the html content been rendered by a component should be fragmented (binding under one single parent, every element should have a closing tag)
+
+    7. Support to Routing - Rendering components based on Routing url
+
+    8. Performance 
+
+    9. Conditional rendering
+
+    10. Simpilicity
+
+    11. Supports both JS and TS based development
+
+
+==============================================================
+Dec 17th 2025
+
+Using Looping CS and Conditions withing HTML Fragment 
+    
+    using map method 
+
+    Iterating over the json object 
+
+===============================================================
+
+Dec 18th 2025:
+
+    Steps to create react project from scracth
+
+        1.under command prompt get inside the folder where we would like to create project 
+        2. run the below command using which we could create a react project boilerplate code 
+
+            npm create vite@latest webapplication -- --template react
+
+        The above command create a boilerplate code with below structure 
+
+            webapplication 
+                node_modules -> will hold the list of all the node modules been installed. 
+                public -> Holds the static resources, html, css, images etc.
+                src -> Holds the source code of react application like components, common js/ts file etc.
+                .gitignore -> Files holds the entry for all folders/files etc which should not be commited to GIT 
+                dist - Folder holds list of final compiled version of code. 
+                package.json - The main file gets invoked everytime we run any npm commands (npm run dev, npm run build, 
+                                npm install etc)
+                                Holds list of all the dev and code dependency modules 
+                                Holds, application name, app version, author name, contact details etc. 
+
+                package.lock.json -> List of all the entries for all node_modules been installed for current project. 
+                Readme.md -> Optional Documentation and installation steps for current project 
+                eslint.config.js -> Used to mention the ecma config to be used while compiling application
+                vite.config.js -> plugins to be used while bundiling 
+                                  Default browser to be used whie launching app 
+                                  Can configure port no. where teh app has to launch 
+                                  etc
+
+    Flow of running files 
+
+        npm run dev 
+            package.json 
+                vite.config.js 
+                    localhost:5173
+                        index.html 
+                            main.jsx 
+                                app.jsx 
+
+============================================================
+
+Dec 23 2025
+
+    Lifecycle of a functional component 
+
+        1. Mounting of component - The time where the ui of component getting rendered on the page
+        2. updating 
+        3. unmounting  - when the component gets removed from the dom structure .      
+
+    Memory management within  a component 
+
+        hook 
+            predefined methods been defined in react from 16.8 
+            used to defined predefined functionality of acomponent, these hooks will help to define state variables and lifeccyle of a compnent can be accessable.
+
+            A hook is a special js function in react which allows you to use state and other powerful React features like 
+            lifecycle methods and context witin functional components.
+
+            1. all hooks will start with predefined 'use' keyword 
+
+            eg:
+                useState() -> used to store any variable within the component state memory 
+                useEffect()
+                useRef()
+                useContext()
+                ....
+                etc.             
+
+                Syntax to use useState hook :
+
+                    const [variablename, methodtosetvalue] = useState(defaultvalue)
+
+                    eg:
+
+                    const [userName, setUserName] = useState('Raj');
+
+                    userName = 'Teena'; // Error
+                    setUserName("Teena"); //Workiong 
+
+
+                    State variables values cannot be changed directly, they have to be changed only trough the state set methods. 
+
+
+============================================================================================
+
+Dec 24 2025
+
+Limitations of hooks
+    1. Hooks should be only defined at the starting point of component definiton 
+    2. Hooks cannot be used witin the conditional or looping or withing in inner functions
+
+Event Handling 
+    The concept of handling any action been performed on the page is called a event handling
+    In react event handling will be managed through react Synthetic event system, ensuring corss-browser consistency and 
+    efficient updates. Developers attach event handlers directly in JSX using camelcase props 
+        eg: onClick, onFocus, onChange, onBlur, onKeyUp, onKeyDown etc. 
+    And React wraps native events in  a syntheticEvent object for normalized behaviour.
+
+        Syntax:
+
+            <Component onClick={displayInfo} ></Component>
+
+    Core principles of Event handling: 
+        Synthetic Events: React creates a SyntheticEvent wrapper around native browser events for consistency across browsers 
+
+        Binding Context - Functions can be defined inline or referenced; arrow functions hep avoid manual binding 
+        Event Propagation: Events bubble up through the component tree, but you can stop propagation with 
+        event.preventDefault( )
+
+        event.preventDefault() - To override default browser behaviour.
+
+
+    var userDetails = {
+        name: 'Teena',
+        age: 20,
+        gender: 'Female',
+        location: 'Hyderabad',
+        displayData() {
+
+        }
+    }
+
+    var [name] = userDetails;
+
+    var age = userDetails.age;  || var [age] = getUserDetails();
+
+    var getUserDetails = () => {
+        .... 
+        .... 
+        return {...}
+    }
+    
+    var location = userDetails.location;
+
+    var [age, location, displayData, gender] = userDetails;
+     
+    
+
+    const [userName, setUserName] = useState('Teena');
+
+    const [userName, setUserName] = {
+        userName: '',
+        setUserName() {
+            ...
+        }
+    }
+
+======================================
+    26th Dec 2025 
+    Component holds two types of memory 
+        Static - Variables been declared directly/non state values will be stored within it 
+        SateMemory - A special memory, any variable been defined through useState, will be stored witin it, anytime the value changes, component lifecycle gets invoked automatically.
+
+Two way databinding
+Reading data from User through input elements 
+useEffect() hook
+
+    Using event handling, we can acheive two way data binding even in REact 
+=====================================
+27 Dec 2025 
+
+    userEffect()  hook 
+    API calls / fetch /axios 
+    Forms in react
+        useEffect() - Very imp hook been supported in react, This hooks gets invoked immedietly after the component(ui) gets binded on to the page 
+            Majorly the code related to DOM update, api calls etc. has to be placed within useEffect hook 
+
+                1. It can even return a method, which gets invoked automatically when the component gets unmounted
+                2. we can even pass, an array of dependencies, any time any dependency value gets updated, automatically useEffect will be recalled again. 
+
+                        Syntax:
+
+                            useEffect(() => {
+                                // Code which is related to api calls, dom operations 
+                            }, []);
+
+                             useEffect(() => {
+                                // Code which is related to api calls, dom operations 
+                            }, [dependency1, dependency2, etc]);
+
+Assignment: 
+    Generate a payslip 
+        form 
+            name 
+            age 
+            dep 
+            basicsal 
+            gender 
+
+        payslip 
+
+            name 
+            age 
+            gender 
+            dep 
+            basicsal 
+            pf 
+            hra 
+            total sal 
+            tax 
+            onhand sal 
+
+---------------------------------------------------------------------------------------
+
+Dec 29 2025 
+
+    Invoking a method before the component gets unmounted\
+
+        useEffect(() => {
+            //after the ui gets mounnted 
+
+
+            return (() => {
+                //gets invoked immedietly before the component gets unmounted
+            })
+        }, [dependencies])
+
+    ----------------
+    React 19 Forms 
+    Formik - is 3rd party lib to read or evaluate form data. 
+    yup is 3rd party data validation lib 
+
+        Forms in  React 19:
+            React 19 introduces a more standardized way to handle forms using new features like 
+            'Actions', 'useActionState and 'useFormStatus' hooks.
+            These simplify form submission, loading States and error handling. 
+        
+    React 18 Forms:     Form handling involves  using 'useState()' to track input values writing 'onChange' handles for each field handling submission via handleSubmit() function. 
+
+    React 19 Form Enhancements:
+        React 19 introduces Actions, which are asynchronous functions designed to simplify form logic. 
+        Handle form submission declaratively , track pending states with 'useFormStatus' Manage form state witin 'useActionState()'
+            It takes two params 
+                1. Form submit handler function  to handle logic after user click on button 
+                2. object to specify the intial state of form 
+
+    Actions are async functions that handle form logic we pass them directly to the forms action attribute.
+
+        Key features in React 19 forms 
+            . Actions -> These are asynchronus functions that handle form submissions. Instead of manaully managing state and side effects, we define an action function and pass to the form. 
+
+            . 'useActionState' -> It is a new hook been introduced in react 19, this hook tracks the state of an action (eg: loading, success, error). It replaces manual 'useState' and 'useEffect' logic form submission. 
+                    - Manages state tied to an action (e.g., success/failure messages).
+                    - Example: show a confirmation after form submission.
+        
+            . 'useFormStatus' -> 'Its a new hook been introduced from react 19, This hook provides realtime status of the form (eg: pending, submitted). It is useful for disabling buttons or showing spinners during submission.
+                    - Tracks whether a form is currently submitting (pending).
+                    - Useful for disabling buttons or showing loading spinners
+
+
+    Note: 
+        We generally dont need to depend on 3rd party lib like Formik from react19, React 19 introduces native form handling features that reduces teh need for external lib like formik or REact hook form.
+    ======================================
+
+    Dec 30th 2025 
+        Forms 
+        Props - dynamically reading params from component props 
+        Custom hooks 
+        sharing data between components 
+
+        What Strict Mode Does (in Development)
+            Strict Mode activates extra checks and warnings for the components inside it. 
+
+                Detects Unexpected Side Effects: To help you write pure components, React intentionally double-invokes certain functions in development, such as component bodies, state initializers, and useEffect setup/cleanup functions. This helps ensure that your components are resilient to being mounted and unmounted multiple times (a behavior that can happen with future features like concurrent rendering).
+
+                Identifies Unsafe Lifecycle Methods: It warns about the use of legacy or unsafe class component lifecycle methods like componentWillMount.
+
+                Warns About Deprecated APIs: It flags the usage of deprecated features, such as the legacy string ref API, the legacy context API, and findDOMNode.
+
+                Ensures Reusable State: it simulates a component being unmounted and remounted immediately to verify that state is properly restored and effects are cleaned up correctly. 
+                
+                By using Strict Mode, you can catch bugs early in development and write more robust, future-proof code that adheres to React's best practices.      
+
+=============================================================
+    JAN 02 2026 
+        Properties 
+            <tag id name style 
+
+    Props - passing parameters to components to acheive dynamic rendering according to the passed prop values. 
+
+    props.children -> The elements which will be as children to the components, will be catched as props.children. 
+
+        <componentname name="test" id="abc"> 
+            <p>hello</p>    -> props.children
+        </componentname>
+======================================================================
+
+Jan 03 2026:
+    Debugging Techniques in React: 
+    1. Browsers default Developer tools 
+    2. React dev tools browser extension
+        Components
+            listing out the list of components been loaded currently within the dom  
+            Relationship btwn the components 
+        Profiler 
+
+Transfer data between components:
+    1. From parent to child - Done through props 
+    2. From Grand parent to grand child 
+    3. PAssing data from child to parent. 
+    4. sharing data between Independent componets - Redux 
+
+Creating Custom Hooks :
+    predefined :
+        useState(),
+        useEffect(),
+        useFromState()
+        useActionState()
+
+    User defined hooks: 
+        a reusable feature which can be used across the multiple components 
+            app.js 
+                fuction sampe() {
+                    
+                }
+                function useSample() {
+                    predefined hooks witin it 
+                }
+    Creating Custom Hooks in React 19:
+        To create custom hook in react 19, define a function that starts with 'use' and internally it uses 
+        build in hooks like 'useState() ', useEfect , useContext(), useformState() etc. inside it. 
+        Custom hooks lets us to encapsulate and reuse logic across the components
+    
+        A custom hook is a simple JS Function 
+            1. Stats with 'use' 
+            2. uses one or more builtin/predefined hooks internally 
+            3. returns values or functions that components can make use.
+
+        Custom hooks helps in reusing the4 logic wihtout duplicating code across components.
+
+            Syntax:
+                funcytion use<userdefined hook name>(optional params) {
+                    ...
+                    ...
+                }
+            Eg: 
+                function useCounter() {
+                    ...
+                    ....
+                    const [a, setA] = useState(10);
+                }
+====================================================================================
+Dec 05/2026
+
+    Custom hooks - fetch 
+    useRef() - hook
+
+        A predefined hook been supported in React, which returns the mutable ref obj whose current properry
+        persist for the full lifeccyle of the component.
+        It is primarily used to access DOM elements or storing values that dont trigger rerender.
+
+        From React 19, 'ref' is now just a prop similary to name, id, className etc.
+
+        'ref' Cleanup function 
+            One of the most requested feature added in React 19 is the ability to return a cleanup function from 
+            a ref callback. This makes managing manual logic much easier.
+
+            Syntax:
+
+                var inputElemntRef = useRef(null);
+
+                <input type="text" ref={inputElemntRef}>
+
+
+        ref 
+            1. DOM 
+            2. cleanup 
+            3. hold the ref of mutable obj 
+-----------------------------------------------
+Jan 06 2026 - 
+    How to share data between components :
+        Relative components
+            Downwards   
+                from parent to Child 
+                    1. Through props - Done 
+                    2. Prop drilling - Done 
+                    3. useContext() & createContext()
+            upwards
+                From Child to parent
+                    1. Through passing call back method from parent to child, child invokes parent callback method
+        Independent componets
+            State Management
+                use Reducers 
+                Redux state management 
+
+useContext() -, createContext()
+
+    useContext() is a predefined hook been supported  in react, useing which we could able to access / subscribe the context memory directl within  the functional component. 
+
+    It works with a cotex object created using React.createContext()
+
+    Context memory is a special memory of every component, which can be accessable only to other child components. 
+
+    Note: The context memory will not be created for every component by default. 
+
+
+    Steps to create context memory within a component
+
+        var contextName = createContext(null); // Create a context memory
+
+    Step 2: Define scope of context memory
+
+        <Contextname.provider>
+            <ChildComp></ChildComp>
+        </Contextname.provider>
+
+    Step 3: Accessing context memory data under child 
+        let obj = useContext(contextname);
+
+    ".Provider" : In react Provider is a special component that comes with every object 
+    created using React.createContext();
+        Its used to provide a value to all components inside its tree, so they can access
+    that value via "useContext" without prop drilling 
+        '.Provider' is essentially the gateway for passing data down the component tree. 
+
+    Note: adding ".Provider" is  optional from Latest REact 
+
+    Note:
+        1. By default none of component holds context memory 
+        2. Context memory only gets created by using createContext()
+        3. We can create multiple context memory for a single compnent
+        4. yes child components can access data from diff context memory, through useContext("contextname")
+
+
+------
+Different types of memory under a component 
+    1. Static memory 
+    2. State memory 
+    3. Context memory 
+
+    =================================================
+Jan 07 2026
+
+    1. useContext() and createContext 
+    2. passin data from child to parent through callback 
+=============================================
+
+Jan 08 2026
+
+    useReducer() Hook 
+
+        To do better state management within a component 
+
+        Javascript reduce() method :
+            Array.prototype.reduce 
+
+            It takes a array of values and reduces them to a single value. 
+            reduce is the method which defines how the logic of reduction happens 
+
+                var result = array.reduce((accumlator, currvalue) => {accumlator + currvalue}, intialvalue)
+
+
+    "useReducer()" a predefined hook been support in React, use the same core idea of reduce method.
+    It uses the concept of a reducer function but applies it to statemenagement instead of arrays .
+
+    useReducer is allways a better alternative for useState hook only in case where a component has much different state
+    values to be managed. 
+
+    using useReducer is expense and a bit complex if we use it in every scenarios 
+
+        1. It can define a predectable application state 
+        2. It can configure a store where data is kept
+        3. Global scope is accessable to all component through state 
+        4. Reducer defines actions that trace changes in data 
+
+    Steps to make use of useReducer 
+
+        1. Create a intial state as store 
+
+            eg: 
+                var intialData = {...}
+
+        2. Define a reducer -> Which handles the actions 
+
+            function reducer(state, action) {
+                // Action holds the type of action been genarated 
+                // state has to be updated based on the action 
+            }
+
+---------------------------------------------------------------------
+Jan 19th 2026 
+
+    Globally maintain state to share between multiple independent components 
+
+    Global state between dependent components through - useContext
+
+    Combining both useContext and useReducer - light Redux state management been supported by default in react 
+    
+    <Test id="abc" name='sample'>
+        <p>Hello world</p>
+        <b>testM</b>
+    </Test>
+
+    function Test(props) {
+        props.id 
+        props.name 
+
+        props.children 
+    }
+====================================================================================
+
+Jan 20th 2026 
+    Redux & Redux tool kit 
+        A 3rdparty JS library for predictable and maintainable global state management
+
+            Redux is a core js lib to maintain state within web application 
+
+            ReduxTookKit  - RTK - Warapper on the top of redux lib to make things simple while implementing redux 
+            statemanagement in a web application, RTK internally also uses redux core features
+
+        Both Redux and RTK purpose and use is we need to write more code if its Redux lib,  where as in  RTK its a wrapper will mostly takecare of basic things by default, so with lesser code we achive statemenagement. 
+
+
+        In Redux we need to define Actions & Reducers as a sperate functionality, where as in RTK we combin both as a Slice.
+
+        Terminology/Components been used in redux 
+            Action 
+            Reducer 
+            View/UI 
+            Store 
+            Dispatcher
+
+    Installation of React Redux - 
+        npm install @reduxjs/toolkit react-redux
+
+
+===================================================================================
+
+Jan 21 2026 
+
+    configureStore - Method to create a ref to Store , reducer is mandate field to be passed.
+    createSlice - Method to create a Slice 
+
+    useSelector - Predefined hook been supported in redux used to access state data from store. 
+    useDispatch  - Through which we can dispatch actions from the components. 
+
+==================================================================================
+
+Jan 23 2026 
+
+Single Page web application 
+    within a webapplication journey we will create only one single page(master/main/index) 
+    under we will loading multiple components accordingly 
+
+React Routing 
+react-router-dom(V7) is the standard library for implementing dynamic, client-side routing in React web applications
+
+ Routing enables us to create Single-Page Applications (SPAs) where navigation occurs without a full page reload. 
+
+Core components and hooks been supported in react-router-dom lib :
+
+<BrowserRouter>	Wraps the entire application to enable routing functionality using the browser's History API.
+
+<Routes>	A container component that looks through its children <Route>s and renders the first one that matches the current URL.
+
+<Route>	Defines a mapping between a specific URL path and the element (component) that should be rendered when that path is matched.
+
+    <Route path="/" element={<Home />} />
+
+
+<Link>	Used for navigation between different routes. It's a replacement for the HTML <a> tag that prevents full page reloads.
+
+useNavigate()	A hook used for programmatic navigation, such as redirecting a user after a form submission or login.
+
+useParams()	A hook that allows access to dynamic segments of the URL (e.g., :id in /user/:id).
+
+<Outlet>	Used in parent routes to specify where the child routes should be rendered, enabling nested layouts.
+
+Modern Features (v6.4 & v7)
+Recent versions introduced "Data APIs" that allow you to manage data fetching and mutations directly within your route definitions: 
+Loaders: Functions that fetch data before a route renders.
+Actions: Functions used for handling data mutations (e.g., POST requests from <Form>).
+RouterProvider: The recommended way to initialize a router when using these advanced data features.
+
+npm install react-router-dom
+------------------------------------------------------------
+
+Higher order components: 
+In React, a Higher-Order Component (HOC) is an advanced pattern used for reusing component logic. It is not a part of the React API, per se, but rather a pattern that emerges from React's compositional nature.
+
+At its core, an HOC is a function that takes a component and returns a new component. HOC is not actually a component instead it is function. 
+
+The Basic Concept
+Think of an HOC as a "wrapper" that injects extra functionality, data, or styling into an existing component without modifying the original component's code.
+
+How it Works
+The syntax usually looks like this:
+
+JavaScript
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
+
+Key Characteristics:
+Pure Functions: An HOC should be a pure function with no side effects. It shouldn't modify the input component; it should use composition.
+
+Logic Reuse: Great for handling repetitive tasks like fetching data, checking authentication, or logging analytics.
+
+-----------
+React Fiber: 
+React Fiber is the reimplementation of React’s core reconciliation algorithm introduced in React 16, designed to make rendering smoother, more flexible, and capable of handling complex UI updates like animations and gestures. Its key innovation is incremental rendering, which allows React to break work into chunks and prioritize updates for better responsiveness.
+
+- Definition: React Fiber is the new reconciliation engine in React, replacing the older stack-based algorithm.
+- Introduced: In 2017 with React 16.
+- Purpose: To improve responsiveness and enable advanced features like concurrency, prioritization, and interruption of rendering tasks
+
+Core Features
+- Incremental Rendering: Breaks rendering work into units and spreads them across frames, keeping the UI responsive.
+- Prioritization: Assigns priority to updates (e.g., user input > background data fetching).
+- Interruptible Work: Rendering can be paused, aborted, or reused when new updates arrive.
+-----------------
+Pure Component
+In React 19, a Pure Component refers to a component that follows the principle of predictability: given the same props, it always renders the same output and does not have side effects
+
+----------
+
+React.memo, usecallback, usememo , lazyloading
+
+memoization -> remembering something which will be used for later instead of 
+reclculating/re initilization 
+
+var handleClick = () => {
+    ...
+}
+
+var handleClick = useCallback(() => {
+    ...
+    ....
+}, [dep ])
+
+var comp = useMemo(() => {
+    ...
+    ...
+})
+===========================================================================
+
+Jan 28 2026:
+
+TypeScript was created by Anders Hejlsberg, a renowned software engineer at Microsoft, and it was officially released in October 2012. Hejlsberg is also famous for designing Turbo Pascal, Delphi, and C#, making him one of the most influential figures in programming language design
+
+- Latest stable release is TypeScript 5.9 (August 2025)
+
+Type script Features: 
+- Static Typing: Helps catch errors at compile time instead of runtime.
+- Interfaces & Generics: Provides structure and flexibility for complex applications.
+- Modern ECMAScript Support: Includes features from newer versions of JavaScript.
+- Tooling Benefits: Autocompletion, refactoring, and debugging are more reliable.
+- Predictability: Strong typing makes code more maintainable and easier to understand.
+
+
+Installation: 
+    npm install -g typescript     ---- npm install -g ts-node
+
+
+    To check the version - 
+        tsc -v
+
+Type script is not a scripting language 
+- Scripting languages (like JavaScript, Python, or Bash) are typically interpreted directly and used for automating tasks or writing quick, lightweight programs.
+
+
+memo -> memoize the result of the component with same props 
+useCallback -> memoize the def of the function 
+
+function Component1() {
+    console.log("hello")
+    var handleClick = () => {
+
+    }
+
+    var handleClick = useCallback(() => {
+
+    }, [])
+
+    return (
+        <DIV onClick={handleClick}></div>
+    )
+}
+
+
+useMemo -> memoize the result of the function - computed value from the function
+
+----------------
+function VistingCardComp({name, age, occ}) {
+    <div class=".
+    .
+    .
+    .
+    .
+    "></div>
+    return (
+
+
+    )
+}
+
+var Card = React.memo(VistingCardComp);
+<VistingCardComp name="Raj" age="20" occ="SE"></VistingCardComp>
+<VistingCardComp name="Krish" age="20" occ="SE"></VistingCardComp>
+<VistingCardComp name="Raj" age="20" occ="SE"></VistingCardComp>
+
+----------------------------------------
+
+var filterEmpDetails = useMemo((name) => {
+    /.. 
+    return filterdlist ;
+}, [])
+
+filterEmpDetails(prasad)
+filterEmpDetails(Raj)
+filterEmpDetails(prasad)  //return the same result 
+----------------------------------------
+var handleClick = useCallback(() => {
+    ..
+})
+------------------------------------
+
+Jan 30th 2026
+
+Syntax:
+    var/let/const variablename : datatype;
+    var userName:string;
+    var isFeepaid:boolean;
+    var userDetails:null;
+    
+-------------------------------------
+Feb 02 2026
+
+    Typescript Arrays, Objects, methods
+
+    Interfaces  
+        interface CollegeDetails {
+    collegeId: string;
+    collegeName: string;
+}
+
+interface UniversityDetails {
+    universityId: string;
+    universityName: string;
+}
+
+interface UserDetails extends UniversityDetails, CollegeDetails {
+    userId: string;
+    userName: string;
+}
+
+var user:UserDetails = {
+    userId: "U123",
+    userName: "John Doe",
+    collegeId: "C456",  
+    collegeName: "ABC College",
+    universityId: "UNI789",
+    universityName: "XYZ University"
+};
+
+    Diff btwn Interface and Types :
+
+        Inteface can be extended through 'extends' keyword 
+        Type can be extended through '&'
+
+        Interface can be redeclared, it will automatically merges the definition 
+        Types cannot be redeclared.
+============================================================================================
+
+Feb 03 2026
+
+    Classes in Typescript 
+        Object
+        Classes 
+        Data abstraction - public, protected, private 
+        DAta encapsulation 
+        Inheritance 
+
+   
+        Access specifiers been supported in Typescript 
+
+        Public -> DAta can be accessable anywhere 
+        Private -> can be accessable only within the class 
+        Protected -> can be accessable only within in the class and its subclass 
+        readonly -> indicates it cannot be modified
+
+ Generics in TS 
+    The concept of passing dynamic datatypes to the methods, so that according to the datatype we pass while calling
+    method, it make sure to defined variables with passed datatype     
+    
+
+    npm create vite@latest appname -- --template react-js
+
+
+==============================
+
+Feb 05 
+
+Setting up nodejs webservr using express js (Framework on top of nodejs )
+    1. Installation of nodejs and npm 
+    2. install express js in local 
+        npm install express -g 
+    3. install epress-generator in local, which h elps in creating boiler plate code for creating a node server 
+        npm install express-generator -g 
+
+    Create server 
+        express <webservername>
+        npm install 
+        npm start 
+
+    ================================
+
+    Feb 06
+        CORS -> Cross Origin Resource Sharing 
+
+        Setup Cors configurtion in server side 
+
+=====================================================
+
+Feb 06
+    Database - To store dtaa 
+        SQL / RDBS
+            SQL 
+            Oracle
+            Sql Server 
+            etc 
+        NO SQL 
+            Mongodb - popular 
+            CouchDB
+            RavenDB
+    Mongodb is the database which stodre data not in the form of atable, instead in the form of Jsonobject - BSON 
+
+        SQL -> Database -> Tables -> Rows -> Fields 
+        NOSQL -> Database -> Collections -> Document -> Fields ky value pairs 
+
+        https://www.mongodb.com/try/download/community
+
+    =======================================================================================
+    
+    Feb 09 2026
+    
+
+
+    ===============================================================
+
+    Feb 14 
+
+        Requirment - Need share session data between multiple services of one single server(localhost:3000), when the req is comming from a cross domain (react localhost:5173)
+            Client - react running in 5173 - live server
+            Webserver - Node js - running in 3000
+
+            Acheived this through Mondodb in memory cahche / Redis in memory cache 
+
+            Steps to be done in server side 
+                1. While intantiating cors, mention its 'credentials: true '
+                2. Configure the session object with the store as mongostore 
+                   session({
+                        store: MongoStore.create({
+                            mongoUrl: 'mongodb://localhost:27017/mySessionDB',
+                            collectionName: 'sessions', // Sessions will be stored in this collection
+                            ttl: 14 * 24 * 60 * 60      // Session expiration (14 days)
+                        }),
+                        secret: 'your-secret-key',
+                        resave: false,
+                        saveUninitialized: false,
+                        name: 'my-session-id', 
+                        cookie: {
+                            maxAge: 10000, // 10 sec
+                            httpOnly: true,              // Prevents JS access to cookie (Security)
+                            secure: true,                // Required for sameSite: 'none' (Requires HTTPS)
+                            sameSite: 'none'             // Allows cross-site cookie usage
+                        }
+                    })
+                3. Start adding /retrivin data from session through req.session objct.
+
+
+            Steps to be done in client side 
+=====================
+
+FEB 17 2026
+
+JEST 
+Jest is a popular JavaScript testing framework developed by Meta (formerly Facebook). It’s widely used for testing React applications, but it also works well with plain JavaScript, TypeScript, Node.js, and other frameworks.
+Key Features of Jest
+- Zero configuration: Works out of the box for most JavaScript projects.
+- Snapshot testing: Captures component output and compares it against stored snapshots.
+- Mocking capabilities: Built-in support for mocking functions, modules, and timers.
+- Parallel test running: Runs tests concurrently for faster execution.
+- Code coverage: Generates detailed coverage reports with minimal setup.
+- Integration with TypeScript: Works seamlessly with ts-jest for TypeScript projects.
+
+
+npm install --save-dev jest
+
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+
+
+JEST Config file: 
+
+// jest.config.js
+module.exports = {
+  collectCoverage: true,
+  coverageThreshold: {
+    global: {
+    branches: 80,
+    functions: 80,
+    lines: 80,
+    statements: 80,
+  }
+  }
+  collectCoverageFrom: [
+    "*.{js,jsx,ts,tsx}",   // include source files
+    "!src/index.tsx",             // exclude entry point
+    "!src/**/*.d.ts",              // exclude type definitions
+    "!node_modules/**"
+  ],
+  coverageReporters: ["text", "lcov", "html"],
+};
+
+npm run test -- --coverage
+
+https://jestjs.io/
+
+jest.config.js - Mention the config along with rules, folders to be ignored , file extenstions to be considerd 
+
+babel.config.js - which helps parsing jsx/tsx to make it understandable to jest framework 
+
+jest.setup.js - list of dpendency modules needed for running test suites
+
+
+------------
+
+Feb 20th 2026
+Steps To inject Jest testing framework to react application 
+
+    1. Install jest 
+        npm install --save-dev jest
+    2. configure package.json with scripts entr for test 
+            test: 'jest'
+    3. Add jest.config.js - https://jestjs.io/docs/configuration
+
+    4. Add babel.config.js 
+
+    5. jset.setup.js 
+
+    6. install dependency node modules 
+          npm install @testing-library/jest-dom @testing-library/react react  @babel/preset-env @babel/preset-react jest-environment-jsdom @babel/preset-typescript
+    7. npm run test - for just running test suits 
+    8. npm run test -- --coverage 
+================================
+23rd Feb 2026
+
+Debouncing
+    Action which waits until the user entry gets paused.
+
+Eg: - Search box with user entry, not making api call on every char entry, instead call API only 
+        if the user pauses for some sec after entry. 
+
+
+Throttling 
+    It fires at most once on given time() even if the user keeps doing the action.
+
+
+============================
+
+Feb 24 2026
+
+Formik - a third pary lib used to read the values from input elements within form. 
+
+npm install formik 
+
+
+Error boundries 
+
+    Comp1 
+        Comp 2
+            comp 3 
+                comp 4 
+                    comp 5 
+
+    predefined hook 'useErrorBoundary' from react-error-boundary 
+
+
+Server side rendering through react. 
+
+ 
+----------------------------------------------
+
+Feb 25th 2026
+    Rendering server side components 
+
+    Steps to run react components from serverside
+        1  Server folder 
+                App.jsx 
+                    react component 
+                server.js 
+                    import ReactDOMServer from "react-dom/server";
+                    import App from "./app.jsx";
+                    const html = ReactDOMServer.renderToString(<App />);
+
+                    app.send(` html code` )
+                package.json 
+                    scripts 
+                         "dev": "babel-node server.js"
+                    "dependencies": {
+                        "@babel/core": "^7.29.0",
+                        "@babel/preset-react": "^7.28.5",
+                        "@babel/register": "^7.28.6",
+                        "express": "^5.2.1",
+                        "react": "^19.2.4",
+                        "react-dom": "^19.2.4",
+                        "vite": "^7.3.1"
+                    },
+                    "devDependencies": {
+                        "@babel/cli": "^7.28.6",
+                        "@babel/core": "^7.29.0",
+                        "@babel/node": "^7.29.0",
+                        "@babel/preset-env": "^7.29.0",
+                        "@babel/preset-react": "^7.28.5",
+                        "@babel/preset-typescript": "^7.28.5",
+                        "ts-node": "^10.9.2"
+                    }
+
+
+
