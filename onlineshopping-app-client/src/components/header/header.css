@@ -1,0 +1,16 @@
+
+        .hover-border-white:hover {
+          border: 1px solid white !important;
+          border-radius: 2px;
+        }
+        .border-transparent {
+          border: 1px solid transparent !important;
+        }
+        .cursor-pointer {
+          cursor: pointer;
+        }
+        /* Hide scrollbar for category list but allow scroll */
+        .container-fluid::-webkit-scrollbar {
+          display: none;
+        }
+      

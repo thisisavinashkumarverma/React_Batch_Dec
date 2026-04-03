@@ -1,0 +1,25 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 10px;    
+    padding: 10px;
+    background-color: #f9f9f9;
+    
+    li {
+        border: 1px solid #ddd  ;
+        margin: 10px 0;
+        padding: 8px;
+        list-style: none;
+        background-color: aqua;
+    }
+    .product-image {
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,36 @@
+body {
+  background-image: url('./assets/pagebackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pagelogo {
+  font-size: 20px;
+  color: red;
+  svg {
+        stroke: red;
+        fill: red;
+        width: 150px;
+       
+  }
+}
+
+.pageheader {
+  padding: 20px;
+  .btn-group, .dropdown-menu {
+    button {
+      color: #fff;
+      background-color: black;
+      border: 1px solid #fff ;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    
+  }
+}
+
+.buttonContainer {
+  text-align: right;
+}
+

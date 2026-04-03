@@ -1,0 +1,7 @@
+.cardContaine {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 400px;
+    background-color: yellow;
+    margin: 10px;
+}
